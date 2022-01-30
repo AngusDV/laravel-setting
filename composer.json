@@ -4,7 +4,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AngusDV\\LaravelSetting\\": "packages/angus-dv/laravel-setting/src"
+            "AngusDV\\LaravelSetting\\": "src"
         }
     },
     "authors": [
@@ -13,5 +13,12 @@
             "email": "hsmsender1370@gmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AngusDV\\LaravelSetting\\LaravelSettingServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev"
 }

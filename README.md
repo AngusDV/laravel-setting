@@ -48,19 +48,17 @@ You can install the package via composer:
 ``` bash
 composer require angus-dv/laravel-setting
 ```
-and run migration to create the database table:
-```angular2html
-php artisan migrate
-```
 and for register service provider:
-```angular2html
-php artisan vendor:publish --provider="angus-dv\laravel-setting\LaravelSettingServiceProvider"
-```
-or
+
+
 ```angular2html
  'providers' => [
    AngusDV\LaravelSetting\LaravelSettingServiceProvider::class,
  ],
+```
+and run migration to create the database table:
+```angular2html
+php artisan migrate
 ```
 ## Usage
 
