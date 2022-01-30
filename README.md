@@ -3,7 +3,9 @@
 
 
 This package makes it easy to store and retrieve some loose values. Stored values are saved as a json file.
-Support Laravel all version .
+```
+Supoort Laravel 8 and PHP 8
+```
 It can be used like this:
 
 ```php
