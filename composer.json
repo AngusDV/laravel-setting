@@ -1,0 +1,17 @@
+{
+    "name": "angus-dv/laravel-setting",
+    "description": "Laravel Persistent Settings.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AngusDV\\LaravelSetting\\": "packages/angus-dv/laravel-setting/src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Hassan Mousavi",
+            "email": "hsmsender1370@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
