@@ -13,7 +13,8 @@ if (!function_exists('settings')) {
             return app(\AngusDV\LaravelSetting\Settings\Settings::class);
         }
         if($default!=null){
-            return app(\AngusDV\LaravelSetting\Settings\Settings::class)->put($key,$default);
+            app(\AngusDV\LaravelSetting\Settings\Settings::class)->put($key,$default);
+            return app(\AngusDV\LaravelSetting\Settings\Settings::class)->get($key);
         }
         return app(\AngusDV\LaravelSetting\Settings\Settings::class)->get($key);
     }
