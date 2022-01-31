@@ -9,13 +9,17 @@ if (!function_exists('settings')) {
      * @return
      */
     function settings($key = null, $default = null) {
-        if ($key === null) {
-            return app(\AngusDV\LaravelSetting\Settings\Settings::class);
+        $setting = app(\AngusDV\LaravelSetting\Settings\Settings::class);
+
+        if (is_null($key)) {
+            return $setting;
         }
-        if($default!=null){
-            app(\AngusDV\LaravelSetting\Settings\Settings::class)->put($key,$default);
-            return app(\AngusDV\LaravelSetting\Settings\Settings::class)->get($key);
+
+        if (is_array($key)) {
+            return $setting->put($key);
         }
-        return app(\AngusDV\LaravelSetting\Settings\Settings::class)->get($key);
+
+        return $setting->get($key, value($default));
+      
     }
 }
